@@ -937,12 +937,19 @@ footer {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.18);
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
   flex-shrink: 0;
+  overflow: hidden;
+  padding: 4px;
+}
+.viber-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .viber-popup-title {
   font-weight: 700;

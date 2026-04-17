@@ -509,7 +509,8 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <span>
-            &copy; {new Date().getFullYear()} Autoservice Ximi. Të gjitha të drejtat e rezervuara.
+            &copy; {new Date().getFullYear()} Autoservice Ximi. Të gjitha të
+            drejtat e rezervuara.
           </span>
         </div>
       </div>
@@ -551,11 +552,10 @@ function FloatingViber({ phone }) {
         <div className="viber-popup" role="dialog">
           <div className="viber-popup-header">
             <div className="viber-avatar">
-              <i className="fab fa-viber"></i>
+              <img src={logo} alt="Autoservice Ximi" />
             </div>
             <div>
               <div className="viber-popup-title">Autoservice Ximi</div>
-              <div className="viber-popup-status">Zakonisht përgjigjemi shpejt</div>
             </div>
             <button
               className="viber-popup-close"
@@ -567,7 +567,7 @@ function FloatingViber({ phone }) {
           </div>
           <div className="viber-popup-body">
             <div className="viber-bubble">
-              Përshëndetje! Si mund t'ju ndihmojmë sot?
+              Përshëndetje! Si mund t'ju ndihmojmë ?
             </div>
           </div>
           <a className="viber-popup-cta" href={viberUrl}>
