@@ -5,32 +5,22 @@ const services = [
   {
     icon: "fa-cogs",
     title: "Guarnicioni i Kokës",
-    desc: "Zëvendësim profesional i head gasket me garanci.",
+    desc: "Zëvendësim profesional dhe riparim i head gasket (kokës së motorit).",
   },
   {
     icon: "fa-grip-lines",
-    title: "Boshti (Axle)",
-    desc: "Riparim dhe ndërrim i boshteve të makinës.",
+    title: "Boshti & Krahët",
+    desc: "Riparim dhe ndërrim i boshteve dhe krahëve të makinës.",
   },
   {
     icon: "fa-compact-disc",
     title: "Frenat",
-    desc: "Sistem frenimi i sigurt – disqe, pastiqe dhe më shumë.",
+    desc: "Sistem frenimi i sigurt – disqe, rotor dhe më shumë.",
   },
   {
     icon: "fa-bolt",
     title: "Alternatori",
     desc: "Diagnostikim dhe riparim i sistemit elektrik.",
-  },
-  {
-    icon: "fa-snowflake",
-    title: "Klimë (AC)",
-    desc: "Mirëmbajtje dhe mbushje e klimës së makinës.",
-  },
-  {
-    icon: "fa-circle-notch",
-    title: "Goma",
-    desc: "Ndërrim, balancim dhe riparim i gomave.",
   },
   {
     icon: "fa-oil-can",
@@ -50,7 +40,7 @@ const services = [
   {
     icon: "fa-fan",
     title: "Turbo",
-    desc: "Riparim dhe rikondicionim i turbokompresorit.",
+    desc: "Riparim dhe rikondicionim i turbos.",
   },
   {
     icon: "fa-exchange-alt",
@@ -67,28 +57,28 @@ const services = [
 const whyUs = [
   {
     icon: "fa-medal",
-    title: "Mbi 20 Vite Eksperiencë",
+    title: "Mbi 20 vite eksperiencë",
     desc: "Dy dekada në shërbim të klientëve tanë besnikë.",
   },
   {
     icon: "fa-tools",
-    title: "Pajisje Moderne",
+    title: "Pajisje moderne",
     desc: "Teknologjia më e fundit për diagnostikim të saktë.",
   },
   {
     icon: "fa-bolt",
-    title: "Shërbim i Shpejtë",
+    title: "Shërbim i shpejtë",
     desc: "Efikas, i sigurt dhe gjithnjë në kohë.",
   },
   {
     icon: "fa-tag",
-    title: "Çmime të Arsyeshme",
+    title: "Çmime të arsyeshme",
     desc: "Cilësi premium me çmime transparente.",
   },
   {
     icon: "fa-smile",
-    title: "Kënaqësi e Garantuar",
-    desc: "Mijëra klientë të kënaqur na rekomandojnë.",
+    title: "Kënaqësi e garantuar",
+    desc: "Qindra klientë të kënaqur na rekomandojnë.",
   },
 ];
 
@@ -135,13 +125,13 @@ function Header() {
             <a onClick={() => go("home")}>Kryefaqja</a>
           </li>
           <li>
-            <a onClick={() => go("about")}>Rreth Nesh</a>
+            <a onClick={() => go("about")}>Rreth nesh</a>
           </li>
           <li>
             <a onClick={() => go("services")}>Shërbimet</a>
           </li>
           <li>
-            <a onClick={() => go("why")}>Pse Ne</a>
+            <a onClick={() => go("why")}>Pse ne</a>
           </li>
           <li>
             <a onClick={() => go("contact")}>Kontakt</a>
@@ -165,11 +155,11 @@ function Hero() {
     <section className="hero" id="home">
       <div className="container hero-content">
         <div className="eyebrow">
-          <i className="fas fa-star"></i> Sherbime profesionale me cmime te
+          <i className="fas fa-star"></i> Shërbime profesionale me çmime të
           arsyeshme
         </div>
         <h1>
-          Servis i Besueshëm me mbi <span className="accent">20 vite</span>{" "}
+          Servis i besueshëm me mbi <span className="accent">20 vite</span>{" "}
           përvojë
         </h1>
         <p>
@@ -193,9 +183,9 @@ function Hero() {
           </div>
           <div className="stat">
             <div className="num">
-              <span>12</span>
+              <span>Qindra</span>
             </div>
-            <div className="label">Shërbime të Specializuara</div>
+            <div className="label">Klient të kënaqur</div>
           </div>
         </div>
       </div>
@@ -206,24 +196,10 @@ function Hero() {
 function About() {
   return (
     <section className="section about" id="about">
-      <div className="container about-grid">
-        <div className="about-image fade-in">
-          <img
-            src="https://unsplash.com/photos/a-man-is-working-on-a-car-engine-6bTHShbYDhY"
-            alt="Mekanik profesional"
-          />
-          <div className="badge">
-            <div className="big">20+</div>
-            <div className="small">
-              Vite
-              <br />
-              Përvojë
-            </div>
-          </div>
-        </div>
+      <div className="container">
         <div className="about-content fade-in">
           <div className="eyebrow">Rreth Nesh</div>
-          <h2>Pasion, Cilësi dhe Korrektësi në Çdo Detaj</h2>
+          <h2>Pasion, Cilësi dhe Korrektësi në çdo detaj</h2>
           <p>
             Autoservice Ximi është një prej servisëve më të besueshëm të
             makinave me mbi dy dekada eksperiencë. Kombinojmë ekspertizën
@@ -263,7 +239,7 @@ function Services() {
       <div className="container">
         <div className="section-title fade-in">
           <div className="eyebrow">Shërbimet Tona</div>
-          <h2>Zgjidhje Komplete për Makinën Tuaj</h2>
+          <h2>Zgjidhje komplete për makinën tuaj</h2>
           <p>
             Nga mirëmbajtja bazike deri tek ndërhyrjet më komplekse mekanike – i
             kemi të gjitha nën një kulm.
@@ -293,7 +269,7 @@ function WhyUs() {
           <div className="eyebrow" style={{ color: "var(--accent)" }}>
             Pse Ne
           </div>
-          <h2>Pse të na Zgjidhni Ne</h2>
+          <h2>Pse të zgjidhni Autoservis Ximi</h2>
           <p style={{ color: "var(--gray-300)" }}>
             Arsye të shumta që na bëjnë zgjedhjen më të mirë për makinën tuaj.
           </p>
@@ -331,8 +307,7 @@ function Contact() {
       <div className="container">
         <div className="section-title fade-in">
           <div className="eyebrow">Kontakti</div>
-          <h2>Na Kontaktoni Sot</h2>
-          <p>Rezervo termin ose kërko këshillim falas – jemi këtu për ju.</p>
+          <h2>Na kontaktoni sot</h2>
         </div>
         <div className="contact-grid">
           <div className="contact-info fade-in">
@@ -370,7 +345,7 @@ function Contact() {
               </div>
               <div>
                 <h5>Orari</h5>
-                <p>Hën – Shtu: 08:00 – 19:00</p>
+                <p>Hënë – Shtunë: 08:00 – 19:00</p>
               </div>
             </div>
             <div className="map">
@@ -383,7 +358,7 @@ function Contact() {
           </div>
 
           <form className="contact-form fade-in" onSubmit={onSubmit}>
-            <h3>Dërgoni një Mesazh</h3>
+            <h3>Dërgoni një email</h3>
             <p>
               {sent
                 ? "✓ Faleminderit! Mesazhi juaj u dërgua me sukses."
@@ -422,7 +397,7 @@ function Contact() {
               ></textarea>
             </div>
             <button type="submit" className="btn btn-primary">
-              <i className="fas fa-paper-plane"></i> Dërgo Mesazhin
+              <i className="fas fa-paper-plane"></i> Dërgo email
             </button>
           </form>
         </div>
@@ -447,17 +422,21 @@ function Footer() {
               korrektësi dhe përkushtim ndaj çdo klienti.
             </p>
             <div className="social">
-              <a aria-label="Facebook">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a aria-label="Instagram">
+              <a
+                aria-label="Instagram"
+                href="https://www.instagram.com/auto_servise_ximi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-instagram"></i>
               </a>
-              <a aria-label="TikTok">
+              <a
+                aria-label="TikTok"
+                href="https://www.tiktok.com/@auto.servis.ximi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-tiktok"></i>
-              </a>
-              <a aria-label="WhatsApp">
-                <i className="fab fa-whatsapp"></i>
               </a>
             </div>
           </div>
@@ -503,7 +482,7 @@ function Footer() {
                   className="fas fa-phone"
                   style={{ color: "var(--accent)", marginRight: 8 }}
                 ></i>
-                +383 44 144 489
+                <a href="tel:+38344144489">+383 44 144 489</a>
               </li>
               <li>
                 <i
@@ -523,16 +502,15 @@ function Footer() {
                   className="fas fa-clock"
                   style={{ color: "var(--accent)", marginRight: 8 }}
                 ></i>
-                Hën–Shtu 08:00–19:00
+                Hënë – Shtunë 08:00–19:00
               </li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
           <span>
-            &copy; 2026 Autoservice Ximi. Të gjitha të drejtat e rezervuara.
+            &copy; {new Date().getFullYear()} Autoservice Ximi. Të gjitha të drejtat e rezervuara.
           </span>
-          <span>Dizajnuar me pasion për makina.</span>
         </div>
       </div>
     </footer>
@@ -564,6 +542,50 @@ function Loader({ onDone }) {
   );
 }
 
+function FloatingViber({ phone }) {
+  const [open, setOpen] = useState(false);
+  const viberUrl = `viber://add?number=${phone}`;
+  return (
+    <div className="viber-float">
+      {open && (
+        <div className="viber-popup" role="dialog">
+          <div className="viber-popup-header">
+            <div className="viber-avatar">
+              <i className="fab fa-viber"></i>
+            </div>
+            <div>
+              <div className="viber-popup-title">Autoservice Ximi</div>
+              <div className="viber-popup-status">Zakonisht përgjigjemi shpejt</div>
+            </div>
+            <button
+              className="viber-popup-close"
+              aria-label="Mbyll"
+              onClick={() => setOpen(false)}
+            >
+              <i className="fas fa-times"></i>
+            </button>
+          </div>
+          <div className="viber-popup-body">
+            <div className="viber-bubble">
+              Përshëndetje! Si mund t'ju ndihmojmë sot?
+            </div>
+          </div>
+          <a className="viber-popup-cta" href={viberUrl}>
+            <i className="fab fa-viber"></i> Hap Viber
+          </a>
+        </div>
+      )}
+      <button
+        className="viber-fab"
+        aria-label="Chat on Viber"
+        onClick={() => setOpen((o) => !o)}
+      >
+        <i className="fab fa-viber"></i>
+      </button>
+    </div>
+  );
+}
+
 export default function App() {
   useFadeIn();
   const [loading, setLoading] = useState(true);
@@ -585,6 +607,7 @@ export default function App() {
       <WhyUs />
       <Contact />
       <Footer />
+      <FloatingViber phone="38344144489" />
     </>
   );
 }
