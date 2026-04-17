@@ -607,7 +607,7 @@ export default function App() {
       <WhyUs />
       <Contact />
       <Footer />
-      <FloatingViber phone="38344144489" />
+      {!loading && <FloatingViber phone="38344144489" />}
     </>
   );
 }
